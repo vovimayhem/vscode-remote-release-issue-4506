@@ -4,4 +4,5 @@ services:
     image: debian:latest
     command: /bin/sh -c "while sleep 1000; do :; done"
     volumes:
-      - .:/default-path
+      # - .:/blah
+      - .:${PWD}

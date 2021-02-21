@@ -1,5 +1,9 @@
 {
-  "dockerComposeFile": "my-compose.yml",
+  "dockerComposeFile": "docker-compose.yml",
   "service": "my_app",
   "workspaceFolder": "${localWorkspaceFolder}",
+  // "workspaceFolder": "/blah",
+  "remoteEnv": {
+    "A_LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+  }
 }
