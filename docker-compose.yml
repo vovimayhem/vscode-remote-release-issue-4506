@@ -1,8 +1,11 @@
 version: "3.7"
 services:
   my_app:
-    image: debian:latest
+    image: vovimayhem/vscode-remote-release-issue-4506:development
+    build:
+      context: .
     command: /bin/sh -c "while sleep 1000; do :; done"
+    working_dir: ${PWD}
     volumes:
       # - .:/blah
       - .:${PWD}
