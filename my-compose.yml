@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+  my_app:
+    image: debian:latest
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    volumes:
+      - .:/default-path
